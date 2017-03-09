@@ -1,11 +1,12 @@
 import random
 import ga_words
 import ga_words_population
+import matplotlib.pyplot as plt
 
-mutationRate = .1
-totalPop = 5000
+mutationRate = .01
+totalPop = 300
 
-target = "aaaaa"
+target = "The mountains"
 tLength = len(target)
 #print(tLength)
 # def setup():
@@ -37,8 +38,6 @@ tLength = len(target)
 # population = setup()
 # draw()
 
-popul = ga_words_population.pop(totalPop, tLength, mutationRate)
-count = 0
 # while(True):
 #     for dna in popul.population:
 #         if (dna.getPhrase() == target):
@@ -46,13 +45,20 @@ count = 0
 #     else:
 #         popul.draw(target)
 # #
-for i in range(50):
-    popul.draw(target)
-    print(len(popul.population))
-    print(len(popul.matingPool))
+for x in range(5):
+    popul = ga_words_population.pop(totalPop, tLength, mutationRate)
+    print(x)
+    for i in range(100):
+        popul.draw(target)
+        #print(i)
+        #print(len(popul.matingPool) / len(popul.population))
+        #print(len(popul.matingPool))
 
-    print(popul.averageFitness)
-    if popul.targetFound(target):
-        break
+        #print(popul.averageFitness)
+        if popul.targetFound(target):
+            print("Target found in ", i ," generations")
+            break
+    print("avg", popul.averageFitness)
+    print("MatingPool Size: ", len(popul.matingPool))
     print("best ", repr(popul.bestSoln.getPhrase()))
     print("best " , popul.bestFitness)

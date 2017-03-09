@@ -1,22 +1,27 @@
 import ga_words
 import random
+import math
 
 class pop:
-    matingPool = []
-    averageFitness = 0
-    bestFitness = 0
-    bestSoln = ga_words.DNA()
+
     def __init__(self, totalPopSize, tLength, mRate):
         self.population = [ga_words.DNA(tLength) for i in range(totalPopSize)]
         self.mutationRate = mRate
+        self.matingPool = []
+        self.averageFitness = 0
+        self.bestFitness = 0
+        self.bestSoln = ga_words.DNA()
+        #self.matingFactor = pSize/totalPopSize/tLength
+
 
     def targetFound (self, target):
-        if self.bestSoln.getPhrase == target:
+        if self.bestSoln.getPhrase() == target:
             return True
         return False
 
     def draw(self, target):
         self.averageFitness = 0
+        self.matingPool = []
         for dna in self.population:                                #sets fitness
             dna.setFitness(target)                                 #set dna fit
             self.averageFitness += dna.fitness                     #inc. avg fit
@@ -26,8 +31,10 @@ class pop:
         self.averageFitness /= len(self.population)
 
         for dna in self.population:
-            for x in range(int(dna.fitness * (1000))):
+            for x in range(math.ceil(dna.fitness)):
+            #for x in range(int(dna.fitness * 5 * len(target)**1)):      #(int(dna.fitness *2 * len(target))):
                 self.matingPool.append(dna)
+                #max matingPool = pop * 100
 
         # for i, d in enumerate(self.matingPool):
         #     print(i)
