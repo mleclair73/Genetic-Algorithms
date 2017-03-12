@@ -11,7 +11,7 @@ mutationRate = [x*.01 for x in range(21)]
 numGens = [x*25 for x in range(13)]
 totalPop = [x*50 for x in range(1,110)]
 
-#gentoSolve = []
+gentoSolve = []
 #avgFit = []
 #poolSize = []
 #best = []

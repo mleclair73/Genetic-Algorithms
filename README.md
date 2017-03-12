@@ -12,6 +12,7 @@ This project showcases a simple implementation of a genetic algorithm used to gu
 ![](/Plots/Population Size v Generations to Solve 100-1000 Population.png)
 
 ## Plot 2
+## Log Scale
 ![](/Plots/Population Size v Time to Solve.png)
 
 ## Plot 3
@@ -19,4 +20,4 @@ This project showcases a simple implementation of a genetic algorithm used to gu
 
 ## Plot 4
 ### Log Scale
-![](/Plots/String Length v Generations to Solve.png)
+![](/Plots/String Length v Time to Solve.png)
