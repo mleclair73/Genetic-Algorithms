@@ -30,6 +30,7 @@ class pop:
             for x in range(math.ceil(dna.fitness)):
                 self.matingPool.append(dna)
 
+
         for i, dna in enumerate(self.population):
             if(len(self.matingPool) > 0):
                 partnerA = self.matingPool[random.randint(0, len(self.matingPool)-1)]

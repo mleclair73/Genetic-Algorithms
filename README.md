@@ -9,14 +9,14 @@ This project showcases a simple implementation of a genetic algorithm used to gu
 * Capped mating pool size or more efficient system for mating pool to improve performance
 
 ## Plot 1
-!(/Plots/Population Size v Generations to Solve 100-1000 Population.png)
+![](/Plots/Population Size v Generations to Solve 100-1000 Population.png)
 
 ## Plot 2
-!(/Plots/Population Size v Time to Solve.png)
+![](/Plots/Population Size v Time to Solve.png)
 
 ## Plot 3
-!(/Plots/String Length v Generations to Solve (pop 1000).png)
+![](/Plots/String Length v Generations to Solve 1000 Population.png)
 
 ## Plot 4
 ### Log Scale
-!(/Plots/String Length v Generations to Solve.png)
+![](/Plots/String Length v Generations to Solve.png)

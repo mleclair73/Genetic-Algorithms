@@ -16,11 +16,6 @@ for x in range(trials):
     print(x)
     for i in range(num_gens):
         popul.draw(target)
-        #print(i)
-        #print(len(popul.matingPool) / len(popul.population))
-        #print(len(popul.matingPool))
-
-        #print(popul.averageFitness)
         if popul.targetFound:
             print("Target found in ", i ," generations")
             break
