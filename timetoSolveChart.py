@@ -44,13 +44,13 @@ for popSize in totalPop[:10]:
             #print(len(popul.matingPool))
 
             #print(popul.averageFitness)
-            if popul.targetFound(word):
+            if popul.targetFound:
                 tmp_gentoSolve.append(i)
                 #print("Target found in ", i ," generations")
                 break
         end = time.time()
         tmp_runTime.append(end-start)
-        if not popul.targetFound(word):
+        if not popul.targetFound:
             tmp_gentoSolve.append(0)
             #print("Target found in ", 0 ," generations")
             break

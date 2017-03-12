@@ -16,14 +16,7 @@ class DNA:
         for (i, letter) in enumerate(self.genes):
             if letter == target[i]:
                 score = score + 1
-        # if (score== 0):
-        #     #self.fitness = 1
-        #     #do something
-        #     self.fitness = score
-        # else:
-        #     self.fitness = abs((score-self.length)/self.length)*100             #percent error
-        #     #self.fitness = self.length / (self.length - score)**2              #min 0, max = length
-        self.fitness = score/self.length * 100 #percent correct/10
+        self.fitness = score/self.length * 100           #percent correct
 
 
     def crossover(self, partner):
