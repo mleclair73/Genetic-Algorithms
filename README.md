@@ -9,15 +9,15 @@ This project showcases a simple implementation of a genetic algorithm used to gu
 * Capped mating pool size or more efficient system for mating pool to improve performance
 
 ## Plot 1
-![](/Plots/Population Size v Generations to Solve 100-1000 Population.png)
+![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/Plots/Population Size v Generations to Solve 100-1000 Population.png)
 
 ## Plot 2
 ## Log Scale
-![](/Plots/Population Size v Time to Solve.png)
+![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/Plots/Population Size v Time to Solve.png)
 
 ## Plot 3
-![](/Plots/String Length v Generations to Solve 1000 Population.png)
+![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/Plots/String Length v Generations to Solve 1000 Population.png)
 
 ## Plot 4
 ### Log Scale
-![](/Plots/String Length v Time to Solve.png)
+![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/Plots/String Length v Time to Solve.png)
