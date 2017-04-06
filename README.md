@@ -14,7 +14,7 @@ This project showcases a simple implementation of a genetic algorithm used to gu
 
 ## Plot 2
 ## Log Scale
-![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/master/Plots/Plots/Population_Size_v_Time_to_Solve.png)
+![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/master/Plots/Population_Size_v_Time_to_Solve.png)
 
 ## Plot 3
 ![](https://raw.githubusercontent.com/mleclair73/Genetic-Algorithms/master/Plots/String_Length_v_Generations_to_Solve_1000_Population.png)
